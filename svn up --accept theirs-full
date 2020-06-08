@@ -1,0 +1,23 @@
+svn up --accept theirs-full
+
+adb connect 127.0.0.1:5555
+
+
+
+./adb connect 127.0.0.1:5555
+
+./adb forward tcp:34999 localabstract:Unity-com.mengya.test2
+
+
+open -n  /Applications/Unity/Unity.app
+
+
+git rm -r --cached AssetBundles-Browser
+
+git diff HEAD ./Assets/example/scripts/example_test1.cs
+
+git reset HEAD^
+
+git checkout .
+
+git clean -d -n 
